@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Samwise Journal</title>
+	<atom:link href="http://localhost/samwise/feed/" rel="self" type="application/rss+xml" />
+	<link>http://localhost:8888/samwise</link>
+	<description></description>
+	<lastBuildDate>Wed, 28 Aug 2013 09:11:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.6</generator>
+		<item>
+		<title>Interactive Living Documents</title>
+		<link>http://localhost:8888/samwise/interactive-living-documents/</link>
+		<comments>http://localhost:8888/samwise/interactive-living-documents/#comments</comments>
+		<pubDate>Wed, 28 Aug 2013 09:11:48 +0000</pubDate>
+		<dc:creator>Samwise</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://localhost:8888/samwise/?p=32</guid>
+		<description><![CDATA[Modern web software rarely lives up to its potential and allow users to do what they really want to do. Web users are locked into single purpose systems with little integration besides hyperlinks or primitive and inflexible embedding. Let&#8217;s discuss a number of applications and discuss the similarities. Wikis Content Management Systems Web Forums Online [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Modern web software rarely lives up to its potential and allow users to do what they really want to do. Web users are locked into single purpose systems with little integration besides hyperlinks or primitive and inflexible embedding. Let&#8217;s discuss a number of applications and discuss the similarities.</p>
+<ul>
+<li>Wikis</li>
+<li>Content Management Systems</li>
+<li>Web Forums</li>
+<li>Online code editors</li>
+<li>Customer Relationship Management</li>
+<li>Document Management Systems</li>
+<li>Issue Trackers</li>
+<li>Workflow systems</li>
+<li>CRUD applications</li>
+<li>Feeds</li>
+<li>Social networks</li>
+<li>Image galleries</li>
+</ul>
+<p>Wikis manage interlinked formatted pages and the history of these pages over time. Content Management Systems manage the composition of a documents such as media items and links. Web forums record ordered messages in a a hierarchy.  Online code editors manage multiple files in different formats and provide edit facility. Issue trackers enforce state changes of an item over time. A real-time feed displays new items as they occur. A social network manages relationships between people and enables sharing of items. These systems essentially:</p>
+<ol>
+<li>implement a user interface to edit things</li>
+<li>store different objects each containing different fields: issues, status updates, gallery, photograph, user, post, thread, forum, menu, menu item</li>
+<li>keep relationships between different things</li>
+<li>display the data in a particular way</li>
+</ol>
+<p>Taking a step back from the tools available, what might people use standard word processed documents for?</p>
+<ol>
+<li><span style="line-height: 16px;">A job advertisement written in a word processor has a set of fields such as qualifications and a responsible individual.</span></li>
+<li>A purchasing department study of offerings may have a repeating structure of offerings with fields for each. Each offering may go through a workflow perhaps involving separate evaluation.</li>
+<li>A user organising an activity may list tasks and requirements which each have a status and a cost.</li>
+<li>A user conducting research may wish to record and organise notes in a specific structure.</li>
+</ol>
+<p>Users that create a document structure in a word processor are required to manually update documents or pick a system that at best approximates a solution. These examples share the following in common:</p>
+<ol>
+<li><span style="line-height: 13px;">They each collect multiple disparate pieces of information in a certain format.</span></li>
+<li>The same information can be displayed in one or more ways.</li>
+<li>There is a workflow for the information that is collected and displayed and how its state changes.</li>
+<li>Information collection takes place while the document is still being written.</li>
+<li>All of the above may be configured specifically for this page only.</li>
+<li>All of the above can be referred or included and used elsewhere.</li>
+</ol>
+<p>Now imagine a system that has these attributes.</p>
+<h1>Each page is its own editor and viewer</h1>
+<p>An interactive living document takes the best features of CRUD applications, blogs, word processing, real-time chat, dashboards, forums and wikis and Apache Wave and puts them together. How you can interact with a page is determined by what is on it.</p>
+<h1>Divergent Writing</h1>
+<p>A divergent writing system acknowledges that when people write, they do not write or think linearly. A task they start with can lead to further separate tasks. A writer should not be constrained by the software that they use. They should not have to save what they are doing, create a new document, go back to the original document and include it by copy and pasting or overtly complex transclusion mechanism. They should be able to create a document within the context of another and decide how it should be displayed later.</p>
+<p>A divergent writing interface can be visualised as a thin but tall graph where each node represents a split in the writing process. Divergences can be opened and closed and individually edited. A divergence may not necessarily be included in the page &#8211; the user interface that facilitates divergent writing does so because it becomes easier to start things while halfway through another process. This operates in the same way as outliner software.</p>
+<h1>Always collecting data</h1>
+<p>Living documents are meant to support multiple collaborators and allow multiple users to contribute to the construction of documents. A document is not only for consumption.</p>
+<ul>
+<li>A user should be able to treat a document as an application. A user may like how the living document has been structured: they may wish to use the same document for their own reviews. They may wish to supply their own data for the generated tables and graphs.</li>
+<li>A blogger reviewing products can accept product names for suggested reviews.</li>
+<li>If the user opts to share the data with the living document author, the author can verify the information is valid and not spam and allow it to appear on the site in the same format as the other articles.</li>
+<li>I am writing a post about different keyboard shortcut formats. I include some examples but want users to provide their own examples. They may wish to link to a man page, a Git Hub to refer to existing keyboard shortcut encodings. Alternatively they could just use a freestyle comment box.</li>
+</ul>
+<h1>Embed anything</h1>
+<p>A living document system should not restrict what you can embed. Many different ecosystems should be accessible from a living document as if they were first class citizens. For example:</p>
+<ul>
+<li>Other rendering languages should be embeddable into the page. I should be able to embed whatever will be understood by the viewer. This includes more than just HTML, SVG, video and flash. I should be able to embed fragments of PostScript, Latex and any other language that generates graphics.</li>
+<li>If the language is not natively renderable by the viewer, at the source should be viewable.</li>
+</ul>
+<h1>Natural Habitat</h1>
+<p>The natural habitat for data is where the data belongs and where it is updated. Living documents seek to use the natural habitat rather than copy data. Pasting data into a living document from another source without having a mechanism in place to synchronise the two items is not recommended.</p>
+<ul>
+<li>Paste events are automatically marked as paste contexts by living documents. This is so that pasted data can be tracked and updated. A paste event may even trigger a search of existed pasted data to see if it has already been pasted, in which case, the two will be connected.</li>
+<li>A user who includes a graphic in a document is able to change the graphic externally and have it automatically appear in the living document whenever it is updated.</li>
+<li>I am comparing web libraries and want to provide small code samples that demonstrate the performance of each. I could write the code or paste it directly into the blog but this disconnects the information from its <em>Natural Habitat</em>. Instead there should be some kind of linkage between the code in source control and its displaying on the article.</li>
+</ul>
+<h2>Example: A Reviewer</h2>
+<p>I&#8217;m writing a post about multiple products in the same market segment and want to write an editorial piece for each. I evaluate products on multiple criteria where each gets a numeric rating. I want to record attributes about the product such as the vendor, its price at the time of review and attach a number of photographs. I open the interactive document system and select <strong>Add</strong>. I type &#8216;<strong>Laptop Review 2013</strong>&#8216;. This creates a fresh document in the context of this name. I write a basic introduction. I can now continue in one of two ways:</p>
+<ul>
+<li>I figure that my reviews should be a template. I select <strong>Add</strong> and type a particular product&#8217;s name. I figure that this review should use a template, so I click <strong>Add</strong> again and type <strong>Review</strong>. I want a product header to appear at the top so I select <strong>Add</strong> and type &#8216;<strong>Product Name Heading</strong>&#8216;. I do the same for every other field and jump back to the <strong>LaptopMaker Model 500</strong> context. Here I see that the document below wants data including a <strong>Product Name Heading</strong>. I either type the data and select it and select the available field or select <strong>Add</strong> and type the field.</li>
+<li>I can begin writing my first review. I write the product&#8217;s name as a heading, an introduction to the product and my ratings for each criteria. I attach a number of images of the product. Now I have a complete review and it contains all the data for a single product but I have not indicated what is what. I highlight my finished review for a single product, select <strong>Template </strong>and type &#8216;<strong>Review</strong>&#8216; and <strong>&#8216;LaptopMaker Model 500&#8242;</strong>. This creates two new contexts: a template context called &#8216;<strong>Review</strong>&#8216; and a document context for the product called &#8216;<strong>LaptopMaker Model 500&#8242;</strong> that makes a reference to the Review context. This newly created Review document is not that useful right now because it is always contains a review about a specific product and its contents never changes, each of the fields I used need to be extracted so I can reuse the template for other reviews. I highlight the product name heading and select <strong>Extract</strong> and type &#8216;<strong>Product Name Heading</strong>&#8216;. This will replace the existing heading with empty slot that wants to accept a &#8216;<strong>Product Name Heading</strong>&#8216; and move the actual product heading to the product context. We can now create further reviews selecting <strong>Create</strong> and <strong>Review</strong>.</li>
+</ul>
+<p>Now that I have my completed reviews, I can decide how they should be displayed in different ways. I want my reviews to be visible on a single page but with a summary at the end. Since my document is a living document, I can create a summary view by referring to elements of the individual reviews. I create graphs and comparison tables using the data from my individual reviews. Since this data shares the same origin, when I update any data relating to a review it will automatically change everywhere, even across contexts.</p>
+<h1>A living document interface</h1>
+<p>The components of a living document interface and its behaviours are as follows:</p>
+<ul>
+<li><strong>Editor: </strong>The editable region functions as a normal WYIWYG interface.</li>
+<li><strong>Semantic Autocomplete </strong>Allows the user to define and include things into the page.</li>
+<li><strong>Relationship Graph </strong>The current connections between the pieces of information available</li>
+</ul>
+<p>While you&#8217;re writing in your living document, you have primitives beyond the standard words and lines. Instead you create arbitrary relationships between things, include them on the page and decide how they should be rendered later. A living document interface works on the principle of describing what you want and building it up over time. So rather than inserting an image like you would in traditional word processor, markup or WYSIWYG editor you instead specify you intent behind what the image is and later apply an image to that. This sounds more complicated than it is. The way an intent might be supplied is via semantic autocompletion, a tool similar in functionality to the following:</p>
+<ul>
+<li>Intellisense in Visual Studio</li>
+<li>Command palette in Sublime</li>
+<li>Navigate to Action in IntelliJ</li>
+<li>Insert Macro in Confluence</li>
+</ul>
+<p>The contents of semantic autocompletion is not completely pre-determined by the developer of the living document software. Instead this widget contains various arbitrarily determined pieces of data and operations that you have used or created before. These commands may be similar to:</p>
+<ul>
+<li><a href="http://www.youtube.com/watch?v=ZWXdgK1tyUo" target="_blank">Mozilla Lab&#8217;s Ubiquity </a></li>
+<li><a href="http://www.youtube.com/watch?v=w_WW-DHqR3c" target="_blank">Ubuntu&#8217;s Heads Up Display</a></li>
+</ul>
+<p>You might use a semantic living document for any of the following:</p>
+<ul>
+<li>Writing about code? You could have code extracts, code output, log outputs.</li>
+<li>Mocking stuff up in code? You could include a live REPLs, a test viewer and editor.</li>
+</ul>
+<p>Now take the primitives above and imagine you can:</p>
+<ul>
+<li>Use semantic  line to create any of the above things such as &#8216;create review&#8217;, &#8216;include program + output&#8217;, &#8216;include REPL&#8217;</li>
+<li>Explore or search any of the above arbitrarily and see where it is used in context</li>
+<li>Transclusion comes for free, you can refer to a portion of any document and have it update everywhere whenever you change it</li>
+<li>Everything is versioned and reversible.</li>
+</ul>
+<h1>Interface Defined at Authorship</h1>
+<p>A document should not be forgotten once posted. The document should adapt and grow over time. An article and its components have states that can change over time. An article is not just in view or edit mode. For example, multiple people can be responsible for an document, each handling aspects such as functionality, data, design and copywriting. Users can leave behind contexts for other users to handle..</p>
+<ul>
+<li>Any user may wish to indicate that some behaviour or logic should take place so that when a developer opens the document, they are required to implement it.</li>
+<li>A content writer may indicate than an image should be displayed at a certain point. What image should be displayed is up to the designer.</li>
+</ul>
+<p>Creating an article should also involve creating a workflow to determine the order that things happen and various state transitions.</p>
+<h1>Zoomable Interfaces</h1>
+<p>The interface can be zoomed out and detail removed to show the divergent tree in context with everything else. A timeline view could flip this graph 90 degrees to imitate a timeline.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://localhost:8888/samwise/interactive-living-documents/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>The Friend Pipe</title>
+		<link>http://localhost:8888/samwise/the-friend-pipe/</link>
+		<comments>http://localhost:8888/samwise/the-friend-pipe/#comments</comments>
+		<pubDate>Sat, 18 May 2013 00:27:05 +0000</pubDate>
+		<dc:creator>Samwise</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://localhost:8888/samwise/?p=38</guid>
+		<description><![CDATA[When you want to send a file to someone, you have multiple choices. You can send emails, you can use file sharing services. You have to make the decision each time. We can use the friend pipe. The friend pipe: filename &#124; sam This pipes the file filename to the friend sam. At this point we [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>When you want to send a file to someone, you have multiple choices. You can send emails, you can use file sharing services. You have to make the decision each time. We can use the friend pipe. The friend pipe:<br />
+<code>filename | sam</code></p>
+<p>This pipes the file filename to the friend sam. At this point we do not care how the file should be transferred. Only that it is transferred in the quickest way at this point. We can broadcast status updates with the <code>fp</code> (friendpipe) command.</p>
+<p><code>friends "Anyone free for lunch? 1.30"</code></p>
+<p>To use the friendpipe, we must learn about another user in order to know how to transfer data to them. The friend manager allows us to create relationships with other people. There are many approaches to adding users:</p>
+<p><code>friend add http://example.com/</code><br />
+<code>friend add git://git@github.com/username/friendpipe.git</code><br />
+<code>friend add username@example.com</code><br />
+<code>friend add ssh://user@11.0.0.1</code><br />
+<code>friend add xmpp://user@example.com</code></p>
+<p>This will pull information about how to connect to the user.</p>
+<h1>Design</h1>
+<ul>
+<li>friendpipe should encrypt content. This can be accomplished exchanging public keys as part of the bootstraping process.</li>
+<li>The basic unit of an interaction is a file transfer. Further abstractions such as social networking can be built on-top.</li>
+<li>Plugins are used to handle the actual transfer between users. (For example: email, file services like Dropbox, SSH, FTP etc)</li>
+<li>Content negotiation picks the best transfer mechanism between two users.</li>
+<li>Broadcasting files to multiple users requires more intelligent picking of algorithms.</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://localhost:8888/samwise/the-friend-pipe/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
