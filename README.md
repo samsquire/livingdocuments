@@ -1,4 +1,4 @@
 livingdocuments
 ===============
 
-notes on living documents
+A blog post on living documents.
